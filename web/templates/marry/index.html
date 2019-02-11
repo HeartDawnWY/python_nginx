@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>王余💗星川園夏 婚礼</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="{{ buildStaticUrl('css/reset.css') }}" />
+    <link rel="stylesheet" href="{{ buildStaticUrl('css/layer.css') }}" />
+    <link rel="stylesheet" href="{{ buildStaticUrl('css/index.css') }}" />
+    <script type="text/javascript" src="{{ buildStaticUrl('js/jquery-1.10.2.js') }}"></script>
+    <script type="text/javascript" src="{{ buildStaticUrl('js/jquery-ui-1.10.2.custom.js') }} "></script>
+    <script type="text/javascript" src="{{ buildStaticUrl('js/index.js') }}"></script>
+    <script type="text/javascript" src="{{ buildStaticUrl('js/layer.js') }}"></script>
+    <script type="text/javascript" src="{{ buildStaticUrl('js/rotate.js') }}"></script>
+    <script type="text/javascript" src="{{ buildStaticUrl('js/common.js') }}"></script>
+</head>
+
+<body style="background:#000" id="body">
+    <!--[if ie 6]>
+        <style type="text/css">
+            .mask {position: absolute; height: 800px;}
+            .pop-box {_position: absolute;}
+        </style>
+        <![endif]-->
+    <!-- <iframe id="iframe" style="display:none; height: 0;" src="http://192.168.10.114/static/blessingWall/music/music.mp3" allow="autoplay"></iframe> -->
+    <canvas id="canvas" style="z-index:900"></canvas>
+    <div class="musicPlay" style="width:0px; height:0px;">
+        <audio id="voice" src="{{ buildStaticUrl('music/music.mp3') }}" autoplay="autoplay" loop></audio>
+    </div>
+
+    <!-- <iframe src="music/music.mp3" style="width:0px;height:0px;" allow='autoplay;loop'></iframe> -->
+
+    <div class="box">
+        <!-- 场景一 -->
+        <div class="first-box">
+            <div class="first-horn">
+                <img src="{{ buildStaticUrl('images/first_horn.png') }}" />
+            </div>
+            <div class="first-txt">
+                <div class="txt1"><img src="{{ buildStaticUrl('images/first_txt1.png') }}" /></div>
+                <div class="txt2"><img src="{{ buildStaticUrl('images/first_txt2.png') }}" /></div>
+            </div>
+        </div>
+
+        <!-- 场景二 -->
+        <div class="second-box">
+            <div class="second-people">
+                <img src="{{ buildStaticUrl('images/second_people.png') }} " />
+            </div>
+            <div class="second-txt">
+                <img src="{{ buildStaticUrl('images/second_txt.png') }} " />
+            </div>
+        </div>
+
+        <!-- 场景三 -->
+        <div class="three-box">
+            <div class="three-img">
+                <img src="{{ buildStaticUrl('images/three_img.jpg') }}" />
+            </div>
+            <img id="person-left" class="person-img postion-left" style="opacity: 0;" src="{{ buildStaticUrl('images/person/boy1.jpg') }}" />
+            <img id="person-right" class="person-img postion-right" style="opacity: 0;" src="{{ buildStaticUrl('images/person/gril1.jpg') }}" />
+        </div>
+
+        <!-- 场景四 -->
+        <div class="fore-box">
+            <div class="love">
+                我爱你 I Love You!!!
+            </div>
+            <div class="fore-img">
+                <img src="{{ buildStaticUrl('images/fore_img.png') }}" />
+            </div>
+            <img name='person-img' class="pserson-box person-box-left" src="{{ buildStaticUrl('images/person/boy2.jpg') }}" />
+            <img name='person-img' class="pserson-both person-both-middle" src="{{ buildStaticUrl('images/person/both.jpg') }}" />
+            <img name='person-img' class="pserson-box person-box-right" src="{{ buildStaticUrl('images/person/gril2.jpg') }}" />
+        </div>
+
+        <!-- 场景五 -->
+        <div class="five-box">
+            <div class="love">
+                进入婚礼 给我们祝福吧~~
+            </div>
+            <div class="five-img">
+                <img src="{{buildStaticUrl('images/five_img.png')}}" />
+                <img name="img-left" class="bride position-groom" src="{{ buildStaticUrl('images/person/person-left.jpg') }}" />
+                <img name="img-right" class="bride position-bride" src="{{ buildStaticUrl('images/person/person-right.jpg') }}" />
+                <img name="img-top" class="two-bride-top" src="{{ buildStaticUrl('images/person/diamond.jpg') }}" />
+                <img name="img-down" class="two-bride-bottom" src="{{ buildStaticUrl('images/person/person-down.jpg') }}" />
+                <div class="u-enter" style="z-index:1000">进入婚礼</div>
+            </div>
+        </div>
+
+        <!-- 场景六 -->
+        <div class="six-box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- 场景七 -->
+        <div class="seven-box">
+            <div class="clickMe">点我送祝福</div>
+            <div class="seven-content">
+                <div class="note-a1"></div>
+                <div class="note-a2"></div>
+                <div class="note-a3"></div>
+                <div class="note-a4"></div>
+                <div class="note-a5"></div>
+                <div class="note-a6"></div>
+                <div class="note-a7"></div>
+                <div class="note-a8"></div>
+                <div class="note-a9"></div>
+                <div class="note-a10"></div>
+                <div class="note-a11"></div>
+                <div class="note-a12"></div>
+            </div>
+            <div class="thanks">谢谢亲们的祝福~~~</div>
+        </div>
+    </div>
+
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+    <div class="pop-box">
+        <h1>送上祝福语</h1>
+        <textarea id="write">写上您的祝福吧~</textarea>
+        <div class="pop-footer">
+            <div class="input-user"><input type="text" id="inputUser" placeholder="祝福人" /></div>
+            <div class="u-sure" id="uSure">确定</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{{ buildStaticUrl('js/fireworks.js') }}"></script>
+    <input type="hidden" id="domain" name="domain" value="{{ config.APP.domain }}" />
+</body>
+
+</html>

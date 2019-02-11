@@ -1,0 +1,511 @@
+.box {
+    position: relative;
+    width: 960px;
+    min-height: 810px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.second-box,
+.five-box,
+.six-box,
+.seven-box {
+    display: none;
+}
+
+
+/* 场景一css */
+
+.first-horn {
+    position: absolute;
+    top: 30px;
+    left: -422px;
+}
+
+.first-txt {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+.first-txt .txt1 {
+    width: 65px;
+    height: 78px;
+    overflow: hidden;
+}
+
+.first-txt .txt2 {
+    width: 0;
+    height: 78px;
+    overflow: hidden;
+}
+
+
+/* 场景二 */
+
+.second-people {
+    position: absolute;
+    left: -286px;
+}
+
+.second-txt {
+    position: absolute;
+    left: 0;
+    top: 383px;
+    display: none;
+}
+
+
+/* 场景三 */
+
+.three-img {
+    position: absolute;
+    left: -554px;
+}
+
+
+/* 场景四 */
+
+.fore-img {
+    position: absolute;
+    top: -518px;
+    left: 40px;
+}
+
+
+/* 场景五 */
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.five-img {
+    position: absolute;
+    top: 50px;
+    left: 38px;
+    width: 885px;
+    height: 573px;
+}
+
+.five-img img {
+    transform: scale(0.4);
+}
+
+.five-img .u-enter {
+    position: absolute;
+    left: 50%;
+    top: 410px;
+    margin-left: -73px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #D05999;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.bride {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    opacity: 0;
+}
+
+.position-groom {
+    position: absolute;
+    left: 19%;
+    top: 330px;
+}
+
+.position-bride {
+    position: absolute;
+    left: 58%;
+    top: 330px;
+}
+
+.two-bride-bottom {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    left: 38%;
+    top: 460px;
+    opacity: 0;
+}
+
+.two-bride-top {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    left: 38%;
+    top: 205px;
+    opacity: 0;
+}
+
+
+/* 场景六 */
+
+.six-box {
+    position: relative;
+    width: 960px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.six-box div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url("../images/six_center_img.jpg") no-repeat;
+}
+
+
+/* 场景七 */
+
+.seven-box {
+    position: relative;
+    width: 958px;
+    height: 800px;
+    background: url("../images/seven_bg.jpg") no-repeat top center;
+    border: 1px solid #F4D938;
+    overflow: hidden;
+}
+
+.clickMe {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 229px;
+    height: 233px;
+    cursor: pointer;
+    text-indent: -99999px;
+    background: url("../images/clickMe.jpg") no-repeat;
+    z-index: 9999;
+}
+
+.seven-content {
+    position: relative;
+    width: 790px;
+    height: 540px;
+    margin: 20px auto;
+    /* background: #f67b93;  */
+    background: url("../images/bg/bg_main.jpg") repeat;
+    border-radius: 50px;
+}
+
+.seven-content .wish {
+    display: flex;
+    width: 200px;
+    height: auto;
+    flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+}
+
+.seven-content .wish .header-1 {
+    background: url("../images/wish/wish1_header.gif") no-repeat;
+    height: 45px;
+    width: 100%;
+}
+
+.seven-content .wish .content-1 {
+    background: url("../images/wish/wish1_content.gif") repeat;
+    min-height: 100px;
+}
+
+.seven-content .wish .footer-1 {
+    height: 65px;
+    width: 100%;
+    background: url("../images/wish/wish1_footer.gif") no-repeat;
+    display: flex;
+}
+
+.seven-content .wish .header-2 {
+    background: url("../images/wish/wish2_header.gif") no-repeat;
+    height: 45px;
+    width: 100%;
+}
+
+.seven-content .wish .content-2 {
+    background: url("../images/wish/wish2_content.gif") repeat;
+    min-height: 100px;
+}
+
+.seven-content .wish .footer-2 {
+    height: 65px;
+    width: 100%;
+    background: url("../images/wish/wish2_footer.gif") no-repeat;
+    display: flex;
+}
+
+.seven-content .wish .header-3 {
+    background: url("../images/wish/wish3_header.gif") no-repeat;
+    height: 45px;
+    width: 100%;
+}
+
+.seven-content .wish .content-3 {
+    background: url("../images/wish/wish3_content.gif") repeat;
+    min-height: 100px;
+}
+
+.seven-content .wish .footer-3 {
+    height: 65px;
+    width: 100%;
+    background: url("../images/wish/wish3_footer.gif") no-repeat;
+    display: flex;
+}
+
+.seven-content .wish .header-4 {
+    background: url("../images/wish/wish4_header.gif") no-repeat;
+    height: 45px;
+    width: 100%;
+}
+
+.seven-content .wish .content-4 {
+    background: url("../images/wish/wish4_content.gif") repeat;
+    min-height: 100px;
+}
+
+.seven-content .wish .footer-4 {
+    height: 65px;
+    width: 100%;
+    background: url("../images/wish/wish4_footer.gif") no-repeat;
+    display: flex;
+}
+
+.seven-content .wish .header-5 {
+    background: url("../images/wish/wish5_header.gif") no-repeat;
+    height: 45px;
+    width: 100%;
+}
+
+.seven-content .wish .content-5 {
+    background: url("../images/wish/wish5_content.gif") repeat;
+    min-height: 100px;
+}
+
+.seven-content .wish .footer-5 {
+    height: 65px;
+    width: 100%;
+    background: url("../images/wish/wish5_footer.gif") no-repeat;
+    display: flex;
+}
+
+.seven-content .wish .header-6 {
+    background: url("../images/wish/wish6_header.gif") no-repeat;
+    height: 45px;
+    width: 100%;
+}
+
+.seven-content .wish .content-6 {
+    background: url("../images/wish/wish6_content.gif") repeat;
+    min-height: 100px;
+}
+
+.seven-content .wish .footer-6 {
+    height: 65px;
+    width: 100%;
+    background: url("../images/wish/wish6_footer.gif") no-repeat;
+    display: flex;
+}
+
+.seven-content .wish .header-7 {
+    background: url("../images/wish/wish7_header.gif") no-repeat;
+    height: 45px;
+    width: 100%;
+}
+
+.seven-content .wish .content-7 {
+    background: url("../images/wish/wish7_content.gif") repeat;
+    min-height: 100px;
+}
+
+.seven-content .wish .footer-7 {
+    height: 65px;
+    width: 100%;
+    background: url("../images/wish/wish7_footer.gif") no-repeat;
+    display: flex;
+}
+
+.content {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.seven-content .wish .footer div {
+    width: 50%;
+}
+
+.seven-content .wish .footer img {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.seven-content .wish .footer span {
+    margin-top: 20px;
+}
+
+.footer-user {
+    padding-top: 20px;
+}
+
+
+/* 遮罩层 */
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.4;
+    filter: Alpha(opacity=40);
+    z-index: 9999;
+    display: none;
+}
+
+.pop-box {
+    position: fixed;
+    top: -300px;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -150px;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    background: #c52947;
+    border-radius: 10px;
+    z-index: 99999;
+}
+
+.pop-box h1 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 5px 0 10px;
+}
+
+.pop-box textarea {
+    display: block;
+    width: 440px;
+    height: 140px;
+    padding: 10px;
+    margin: 20px auto;
+    resize: none;
+    font-size: 16px;
+    border-radius: 5px;
+    background: white;
+    color: #691323;
+    _margin-left: 270px;
+}
+
+.pop-box .pop-footer {
+    display: flex;
+}
+
+.pop-box .pop-footer div {
+    box-flex: 1;
+    width: 100%;
+}
+
+.pop-box .input-user {
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 8px 0;
+}
+
+.pop-box .input-user input {
+    font-size: 18px;
+    width: 100%;
+    line-height: 20px;
+}
+
+.pop-box .u-sure {
+    margin-left: 50px;
+    margin-right: 20px;
+    width: 100px;
+    padding: 8px 0;
+    background: #780a1f;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.person-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.postion-left {
+    position: absolute;
+    left: 200px;
+    top: 450px;
+}
+
+.postion-right {
+    position: absolute;
+    left: 550px;
+    top: 450px;
+}
+
+.love {
+    text-shadow: #FF0000 0 0 10px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 10px;
+    opacity: 0;
+}
+
+.pserson-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    opacity: 0;
+}
+
+.pserson-both {
+    width: 380px;
+    height: 380px;
+    border-radius: 190px;
+    opacity: 0;
+}
+
+.person-box-left {
+    position: absolute;
+    top: 620px;
+    left: 80px;
+}
+
+.person-both-middle {
+    position: absolute;
+    top: 480px;
+    left: 292px;
+}
+
+.person-box-right {
+    position: absolute;
+    top: 620px;
+    left: 685px;
+}
+
+.thanks {
+    text-shadow: #FF0000 0 0 10px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    width: 600px;
+    margin-left: 250px;
+    margin-top: 50px;
+}
